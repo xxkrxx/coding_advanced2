@@ -47,6 +47,10 @@ h2 {
 	display: flex;
 }
 
+.main-title {
+	text-align: center;
+}
+
 .main-img1 {
 	background-image: url("../img/interior.jpg");
 	background-size: cover;
@@ -82,19 +86,18 @@ h2 {
 	width: 450px;
 	height: 300px;
 }
-    
-
 
 .title {
 	background-color: #FFC7AF;
 	cursor: pointer;
-
 }
 
 
 .list {
-	display: none;
+  display: none;
+  list-style-type: disc; 
 }
+
 
 .title:hover {
 	background-color: #FFC7AF;
