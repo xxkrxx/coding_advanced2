@@ -48,7 +48,7 @@
   <div class="main">
     <section class="guidance">
       <div class="container">
-        <h1>新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+        <h1 class="main-title">新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
         <div class="setellite-plane">
           <ul>
             <h2 class="title py-2">■衛生面に関して</h2>
@@ -132,31 +132,12 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script>
-    // タイトル要素とリスト要素の参照を取得
-    const dropdownBtns = document.querySelectorAll(".title");
-    const dropdownMenus = document.querySelectorAll(".list");
-
-    // ドロップダウンを切り替える関数
-    const toggleDropdown = function (index) {
-      dropdownMenus[index].classList.toggle("show");
-    };
-
-    // タイトルがクリックされたときにドロップダウンを開閉する
-    dropdownBtns.forEach(function(dropdownBtn, index) {
-      dropdownBtn.addEventListener("click", function (e){
-        e.stopPropagation(); // イベントのバブリングを停止
-        toggleDropdown(index); // ドロップダウンを切り替える
-      }); 
-    });
-
-    // ドキュメント全体がクリックされたときにドロップダウンを閉じる
-    document.documentElement.addEventListener("click", function (){
-      dropdownMenus.forEach(function(dropdownMenu){
-        if (dropdownMenu.classList.contains("show")){
-          dropdownMenu.classList.remove("show");
-        }
+    $(document).ready(function(){
+      $(".title").click(function(){
+        $(this).next('.list').slideToggle();
       });
     });
   </script>
