@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	background-color:#FFEFD5;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+.main-visual{
+	display: flex;
+}
+
+.main-img1 {
+	background-image: url("../img/interior.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+.main-img2 {
+	background-image: url("../img/restaurant.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+.category-title{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin:50px 0 20px;
+}
+
+.info{
+	width: 700px;
+	margin-left: 50px;
+	padding: 30px 0;
+}
+
+
+.category-content{
+	display: flex;
+}
+
+.category-img{
+	width: 450px;
+	height: 300px;
+}
+    
+
+
+.title {
+	background-color: #FFC7AF;
+	cursor: pointer;
+
+}
+
+
+.list {
+	display: none;
+}
+
+.title:hover {
+	background-color: #FFC7AF;
+}
+
+.list.show {
+	display: block;
+}
+
