@@ -39,12 +39,29 @@
       </div>
     </div>
   </nav>
-
-  <div class="main-visual">
-    <div class="main-img1"></div>
-    <div class="main-img2"></div>
+  <!-- main画像 -->
+  <div class="content">
+    <div class="slider-wrapper">
+      <div class="mainimg-list">
+        <img class="image-item" src="./img/interior.jpg" alt="mainimg-item">
+        <img class="image-item" src="./img/restaurant.jpg" alt="mainimg-item">
+        <img class="image-item" src="./img/food.jpg" alt="mainimg-item">
+        <img class="image-item" src="./img/food2.jpg" alt="mainimg-item">
+      </div>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scroullbar-thumb"></div> 
+      </div>
+    </div>
+    <!-- ページネーションの要素 -->
+    <div class="swiper-pagination"></div>
+    <!-- ナビゲーションボタン （前、次） -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 
+  <!-- 案内 -->
   <div class="main">
     <section class="guidance">
       <div class="container">
@@ -89,7 +106,7 @@
       </div>
     </section>
     
-
+    <!-- カテゴリー -->
     <section class="category">
       <div class="container">
         <h1 class="category-title">Signature Food</h1>
@@ -136,6 +153,8 @@
         </div>
       </div>
     </section>
+
+    <!-- address -->
     <section class="address">
       <div class="flex-item wrapper">
         <div class="item">
@@ -156,16 +175,37 @@
       </div>
     </section>
   </div>
-
+  <!-- store -->
   <div class="store">
     <div class="container">
       <h1 class="store-title">店舗一覧</h1>
       <div class="store-area">
-        <img class="store-area-img" src="./img/restaurant2.jpg" alt="東京">
+        <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant2.jpg" alt="東京">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>東京都渋谷区xxxxx xxxxx</p>
+        </div>
+        <div class="store-map">
         <img class="store-area-img" src="./img/restaurant3.jpg" alt="千葉">
-        <img class="store-area-img" src="./img/restaurant4.jpg" alt="神奈川">
-        <img class="store-area-img" src="./img/restaurant5.jpg" alt="埼玉">
+        <p class="store-area-text"><span class="dli-pin-fill"></span>千葉県松戸市xxxxx xxxxx</p>
+        </div>
+        <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant4.jpg" alt="神奈川">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>神奈川県横浜市xxxxx xxxxx</p>
+        </div>
+       <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant5.jpg" alt="埼玉">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>埼玉県川越市xxxxx xxxxx</p>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="flex-item wrapper">
+      <p class="item">プライバシーポリシー</p>
+      <p class="item">お問い合わせ</p>
+      <p class="item">運営株式会社</p>
     </div>
   </div>
 
@@ -191,6 +231,7 @@
     ScrollReveal().reveal('.category-img', { delay: 200, origin: "bottom" });
     ScrollReveal().reveal('.info', { delay: 200, origin: "bottom" });
     ScrollReveal().reveal('.address', { delay: 200, origin: "bottom" });
+    ScrollReveal().reveal('.store', { delay: 200, origin: "bottom" });
   </script>
 </body>
 </html>
