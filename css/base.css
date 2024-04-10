@@ -43,27 +43,60 @@ h2 {
 	font-size: 1.5rem;
 }
 
-.main-visual{
+
+.slider-wrapper .mainimg-list{
+	display: grid;
+	overflow-x: auto;/* 大事 */
+	scrollbar-width: none;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .mainimg-list::-webkit-scrollbar {
+	display: none;
+}
+
+.content .slider-scrollbar {
+	height: 24px;
+	width: 100%;
 	display: flex;
+	align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+	height: 2px;
+	width: 100%;
+	background: #ccc;
+	position: relative;
+	border-radius: 4px;
+}
+
+.slider-scrollbar .scroullbar-thumb {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	background: #000;
+	border-radius: inherit;
+}
+
+.slider-scrollbar .scroullbar-thumb::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -10px;
+	bottom: -10px;
+}
+
+
+.slider-wrapper .mainimg-list .image-item {
+	width: 800px;
+	height: 600px;
+	object-fit: cover;
 }
 
 .main-title {
 	text-align: center;
 	padding:10px 0;
-}
-
-.main-img1 {
-	background-image: url("../img/interior.jpg");
-	background-size: cover;
-	width: 100%;
-	height: 600px;
-}
-
-.main-img2 {
-	background-image: url("../img/restaurant.jpg");
-	background-size: cover;
-	width: 100%;
-	height: 600px;
 }
 
 .category-title{
@@ -155,14 +188,67 @@ h2 {
 
 .store-title{
 	text-align: center;
+	padding: 30px 0;
 }
 
 .store-area {
 	display: flex;
+	justify-content: center;
 }
 
 .store-area-img {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+	margin: 0 20px;
+}
+
+.store-area-text {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* マップマーク */
+.dli-pin-fill {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 0.8em;
+  height: 0.8em;
+  background: currentColor;
+  border: 0.1em solid currentColor;
+  border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+  box-sizing: content-box;
+  transform: rotate(45deg);
+	top: -0.1em;
+}
+
+.dli-pin-fill::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  width: 0.336em;
+  height: 0.336em;
+  background: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.footer {
+	background-color: darkgray;
+	width: 100%;
+	height: 100px;
+}
+
+.footer .flex-item {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.footer .item {
+	margin: 0 10px;
 }
