@@ -6,6 +6,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Casteria</title>
   <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <body>
   <!-- navbar section -->
@@ -41,25 +44,23 @@
   </nav>
   <!-- main画像 -->
   <div class="content">
-    <div class="slider-wrapper">
-      <div class="mainimg-list">
-        <img class="image-item" src="./img/interior.jpg" alt="mainimg-item">
-        <img class="image-item" src="./img/restaurant.jpg" alt="mainimg-item">
-        <img class="image-item" src="./img/food.jpg" alt="mainimg-item">
-        <img class="image-item" src="./img/food2.jpg" alt="mainimg-item">
-      </div>
-    </div>
+    <ul class="slider">
+      <li><img src="./img/interior.jpg" alt="mainimg-item"></li>
+      <li><img src="./img/restaurant.jpg" alt="mainimg-item"></li>
+      <li><img src="./img/food.jpg" alt="mainimg-item"></li>
+      <li><img src="./img/food2.jpg" alt="mainimg-item"></li>
+    </ul>
     <div class="slider-scrollbar">
       <div class="scrollbar-track">
         <div class="scroullbar-thumb"></div> 
       </div>
     </div>
-    <!-- ページネーションの要素 -->
-    <div class="swiper-pagination"></div>
-    <!-- ナビゲーションボタン （前、次） -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
+      <!-- ページネーションの要素 -->
+      <div class="swiper-pagination"></div>
+      <!-- ナビゲーションボタン （前、次） -->
+      <div class="swiper-button-prev swiper-button-blue"></div>
+      <div class="swiper-button-next swiper-button-blue"></div>
+    </div>
 
   <!-- 案内 -->
   <div class="main">
@@ -211,17 +212,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $(".title").click(function(){
-        $(this).next('.list').slideToggle();
-      });
-    });
-  </script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+    $(".title").click(function(){
+      $(this).next('.list').slideToggle();
+    });
+  });
+
     ScrollReveal({ 
       reset: true,
       distance: "60px",
@@ -232,6 +234,34 @@
     ScrollReveal().reveal('.info', { delay: 200, origin: "bottom" });
     ScrollReveal().reveal('.address', { delay: 200, origin: "bottom" });
     ScrollReveal().reveal('.store', { delay: 200, origin: "bottom" });
+
+	$('.slider').slick({
+      autoplay: true,//自動的に動き出すか。初期値はfalse。
+      infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+      slidesToShow: 2,//スライドを画面に2枚見せる
+      slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+      prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+      nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+      dots: true,//下部ドットナビゲーションの表示
+      responsive: [
+        {
+        breakpoint: 769,//モニターの横幅が769px以下の見せ方
+        settings: {
+          slidesToShow: 2,//スライドを画面に2枚見せる
+          slidesToScroll: 2,//1回のスクロールで2枚の写真を移動して見せる
+        }
+      },
+      {
+        breakpoint: 426,//モニターの横幅が426px以下の見せ方
+        settings: {
+          slidesToShow: 1,//スライドを画面に1枚見せる
+          slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+        }
+      }
+      ]
+  });
+
   </script>
+  
 </body>
 </html>
