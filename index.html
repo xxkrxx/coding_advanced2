@@ -14,12 +14,12 @@
   <!-- navbar section -->
   <nav class="navbar navbar-expand-lg py-1" style="background-color:lightgray;">
     <div class="container">
+      <a class="navbar-brand" href="#">
+        <h1 class="site-title"><strong>Casteria</strong></h1>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <h1><strong>Casteria</strong></h1>
-      </a>      
+      </button>      
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -222,10 +222,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
 
+
+<script>
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',// ドロップボタンが横向きになる
@@ -268,19 +268,17 @@
       $(this).next('.list').slideToggle();
     });
   });
-
-    ScrollReveal({ 
-      reset: true,
-      distance: "60px",
-      duration: 1000 
-    });
-    ScrollReveal().reveal('.category-title', { delay: 300, origin: "bottom" });
-    ScrollReveal().reveal('.category-img', { delay: 300, origin: "bottom" });
-    ScrollReveal().reveal('.info', { delay: 300, origin: "bottom" });
-    ScrollReveal().reveal('.address', { delay: 300, origin: "bottom" });
-    ScrollReveal().reveal('.store', { delay: 300, origin: "bottom" });
-
   </script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ reset: true, distance: "60px", duration: 1000 });
+  ScrollReveal().reveal('.category-img', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.category-title', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.info', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.address', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.store', { delay: 300, origin: "bottom" });
+</script>
   
 </body>
 </html>

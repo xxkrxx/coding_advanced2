@@ -221,3 +221,14 @@ h2 {
 .footer .item {
 	margin: 0 10px;
 }
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+
+.site-title {
+	justify-content: left;
+}
+
+}
