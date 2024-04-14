@@ -244,8 +244,17 @@ SP
 	}
 
 	.title {
-		width: 430px;
+		width: 400px; 
 	}
+
+	.list {
+		width: 400px; 
+	}
+
+	.list-text {
+		font-size: 14px;
+	}
+
 
 	.category-title {
 		margin: 0 auto;
@@ -269,8 +278,8 @@ SP
 		height: 300px;
 	}
 
-	.info {
-		padding: 0;
+	.category .info {
+		padding: 0 0 50px 0;
 		margin-right: 40px;
 	}
 
@@ -292,7 +301,20 @@ SP
 
 	.address .item .address-img {
 		width: 400px;
-		height: 250px;
+		height: 270px;
+	}
+
+	.address .item p {
+		padding: 0 0 20px 0;
+	}
+
+	.responsive-hours {
+		white-space: nowrap;
+		padding-bottom: 20px;
+	}
+
+	.footer {
+		margin-top: 30px;
 	}
 	
 
