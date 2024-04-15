@@ -221,3 +221,102 @@ h2 {
 .footer .item {
 	margin: 0 10px;
 }
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+	.image-item {
+		padding: 20px 40px 0 50px;
+		width: 550px;
+		height: 550px;
+	}
+
+	.main-title {
+		max-width: calc(12 * 1em); /* 12文字分の幅 */
+		text-align: left;/* テキストを左寄せにする */
+		margin: 0 auto;
+	}
+
+	.setellite-plane {
+		display: flex;
+		justify-content: center;
+	}
+
+	.title {
+		width: 400px; 
+	}
+
+	.list {
+		width: 400px; 
+	}
+
+	.list-text {
+		font-size: 14px;
+	}
+
+
+	.category-title {
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 230px;
+	}
+
+	.category-title:nth-of-type(1) { /* 1番目の .category-title 要素にのみ適用 */
+		padding-right: 170px;
+	}
+
+	.category-content {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.category-img {
+		width: 400px;
+		height: 300px;
+	}
+
+	.category .info {
+		padding: 0 0 50px 0;
+		margin-right: 40px;
+	}
+
+
+	.address {
+		width: 400px;
+		height: 600px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	.address .sec-title {
+		padding-left: 20px;
+	}
+
+  .address .flex-item {
+    flex-direction: column;
+  }
+
+	.address .item .address-img {
+		width: 400px;
+		height: 270px;
+	}
+
+	.address .item p {
+		padding: 0 0 20px 0;
+	}
+
+	.responsive-hours {
+		white-space: nowrap;
+		padding-bottom: 20px;
+	}
+
+	.footer {
+		margin-top: 30px;
+	}
+	
+
+	
+}
