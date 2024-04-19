@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Casteria</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+</head>
+<body>
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg py-1" style="background-color:lightgray;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h1 class="site-title"><strong>Casteria</strong></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><strong>Home</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Drink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">お問い合わせ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- main画像 -->
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img class="image-item" src="./img/interior.jpg" alt="mainimg-item">
+      </div>
+      <div class="swiper-slide">
+        <img class="image-item" src="./img/restaurant.jpg" alt="mainimg-item">
+      </div>
+      <div class="swiper-slide">
+        <img class="image-item" src="./img/food.jpg" alt="mainimg-item">
+      </div>
+      <div class="swiper-slide">
+        <img class="image-item" src="./img/food2.jpg" alt="mainimg-item">
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- 案内 -->
+  <div class="main">
+    <section class="guidance">
+      <div class="container">
+        <h1 class="main-title">新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+        <div class="setellite-plane">
+          <ul>
+            <li>
+              <h2 class="title py-2 px-3">■衛生面に関して</h2>
+              <ul class="list">
+                <li class="list-text py-2">・マスクを着用しての接客</li>
+                <li class="list-text py-2">・出勤前の検温の徹底</li>
+                <li class="list-text py-2">・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+                <li class="list-text py-2">・より頻度の高い手洗いの励行</li>
+                <li class="list-text py-2">・テーブルにお客様の消毒用アルコールの設置</li>
+                <li class="list-text py-2">・従業員間の距離確保のため、休憩や研修時の客席利用</li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="title py-2 px-3">■お客様へのご協力のお願い</h2>
+              <ul class="list">
+                <li class="list-text py-2">・店内では、飲食以外のマスクの着用をお願いいたします</li>
+                <li class="list-text py-2">・入店時の手指の消毒にご協力ください</li>
+                <li class="list-text py-2">・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+                <li class="list-text py-2">・多数でお越しの際は、お一人がまとめてご注文願います（混雑時に入場制限する場合がございます）</li>
+                <li class="list-text py-2">・発熱や体調不良の際はご入店をお控えください</li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="title py-2 px-3">■サービスに関して</h2>
+              <ul class="list">
+                <li class="list-text py-2">・直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                <li class="list-text py-2">・直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                <li class="list-text py-2">・ドリンクやフードのサンプリング中止</li>
+                <li class="list-text py-2">・地域活動・イベントの中止</li>
+                <li class="list-text py-2">・混雑時間帯の客席の譲り合いのご協力お願いの実施</li>
+                <li class="list-text py-2">・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+                <li class="list-text py-2">・混雑状況に応じたドライブスルーサービスの一時休止や店内客先利用の制限</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- カテゴリー -->
+    <section class="category">
+        <h1 class="category-title"> Signature Food</h1>
+        <div class="category-content">
+            <div class="item">
+              <img class="category-img" src="./img/food.jpg">
+            </div>
+          <div class="info">
+            <p>
+              サーモンは刺身やカルパッチョで食べるのが美味しいで<br>
+              すが、リッチな気分になれるサーモンステーキがおすす<br>
+              めです。サーモンの美味しさを引き立てる２種のソース<br>
+              も絶品です！
+            </p>
+          </div>
+        </div>
+        
+        <h1 class="category-title">Our Coffee</h1>  
+        <div class="category-content">
+          <div class="image">
+            <img class="category-img" src="./img/barista.jpg">
+          </div>
+          <div class="info">
+            <p>
+              当店のコーヒー豆が厳選して世界中から買い付けていま<br>
+              す。そして、そのコーヒー豆のおいしさを最大限に引き<br>
+              出すために自社のロースタリーでも絶品です！
+            </p>
+          </div>
+        </div>
+
+        <h1 class="category-title">Our Food</h1>
+        <div class="category-content">
+          <div class="image">
+            <img class="category-img" src="./img/food3.jpg">
+          </div>
+          <div class="info">
+            <p>
+              当店は何よりもまずは衛生管理を気をつけています。「安<br>
+              全、安心」をお届けするために日々継続的な努力を惜し<br>
+              みません。
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- address -->
+    <section class="address">
+      <div class="flex-item wrapper">
+        <div class="item">
+          <h2 class="sec-title">Address</h2>
+          <p>
+            681 xxxx Drive, xxxxx xxxx #01 - 06 000000
+            <br><br>
+            Opening Hours
+          </p>
+          <h2 class="sec-title">Mondays - Friday: 10am - 9pm </h2>
+          <p class="responsive-hours">
+            Satudays, Sundays & Public Holidays: 9am- 9pm
+          </p>
+        </div>
+        <div class="item">
+          <img class="address-img" src="./img/barista.jpg" alt="Coffee">
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- store -->
+  <div class="store d-none d-lg-block">
+    <div class="container">
+      <h1 class="store-title">店舗一覧</h1>
+      <div class="store-area">
+        <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant2.jpg" alt="東京">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>東京都渋谷区xxxxx xxxxx</p>
+        </div>
+        <div class="store-map">
+        <img class="store-area-img" src="./img/restaurant3.jpg" alt="千葉">
+        <p class="store-area-text"><span class="dli-pin-fill"></span>千葉県松戸市xxxxx xxxxx</p>
+        </div>
+        <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant4.jpg" alt="神奈川">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>神奈川県横浜市xxxxx xxxxx</p>
+        </div>
+       <div class="store-map">
+          <img class="store-area-img" src="./img/restaurant5.jpg" alt="埼玉">
+          <p class="store-area-text"><span class="dli-pin-fill"></span>埼玉県川越市xxxxx xxxxx</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="flex-item wrapper">
+      <p class="item">プライバシーポリシー</p>
+      <p class="item">お問い合わせ</p>
+      <p class="item">運営株式会社</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',// ドロップボタンが横向きになる
+    loop: true,
+    speed: 1000, // 1秒かけてスワイプする
+    autoplay: {
+    delay: 3000, // 3秒ごとに自動でスワイプ
+    disableOnInteraction: false, // ユーザーがスワイプした後も自動スワイプを継続
+    },
+    breakpoints: {
+      640: { // 640px以下の場合
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      900: { // 900pxの以上の場合
+        slidesPerView: 2,
+        slidesPerGroup:1,
+      },
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+  $(document).ready(function(){
+    $(".title").click(function(){
+      $(this).next('.list').slideToggle();
+    });
+  });
+  </script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ reset: true, distance: "60px", duration: 1000 });
+  ScrollReveal().reveal('.category-img', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.category-title', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.info', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.address', { delay: 300, origin: "bottom" });
+  ScrollReveal().reveal('.store', { delay: 300, origin: "bottom" });
+</script>
+  
+</body>
+</html>
