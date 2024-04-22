@@ -59,9 +59,11 @@ h2 {
 	object-fit: cover;
 }
 
+
 .main-title {
 	text-align: center;
 	padding:10px 0;
+
 }
 
 .setellite-plane {
@@ -96,12 +98,37 @@ h2 {
 	padding-top: 150px;
 }
 
-.category-title{
+.category-title1{
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 10px 50px 10px 280px;
 	padding-top: 60px;
 	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-left: -610px;
+}
+
+.category-title2{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 10px 50px 10px 280px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-left: -665px;
+}
+
+.category-title3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 10px 50px 10px 280px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-left: -685px;
 }
 
 .info {
@@ -262,14 +289,23 @@ SP
 	}
 
 
-	.category-title {
+	.category-title1 {
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 230px;
+		padding-right: 170px;
+	}
+
+	.category-title2 {
 		margin: 0 auto;
 		text-align: center;
 		padding-right: 230px;
 	}
 
-	.category-title:nth-of-type(1) { /* 1番目の .category-title 要素にのみ適用 */
-		padding-right: 170px;
+	.category-title3 {
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 230px;
 	}
 
 	.category-content {
